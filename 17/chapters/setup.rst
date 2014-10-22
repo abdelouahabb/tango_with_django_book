@@ -158,6 +158,8 @@ Verify that Django picked up your new application by running the development ser
 
 Creating a View
 ---------------
+Django creates the View file in the wrong place, `you have to move it <http://stackoverflow.com/questions/22011791/importerror-no-module-named-views>`_ to the "inner" ``tango_with_django_project`` directory.
+
 With our Rango application created, let's now create a simple view. For our first view, let's just send some simple text back to the client - we won't concern ourselves about using models or templates just yet.
 
 In your favourite IDE, open the file ``views.py``, located within your newly created ``rango`` application directory. Remove the comment ``# Create your views here.`` so that you now have a blank file.
